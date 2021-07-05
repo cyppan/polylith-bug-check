@@ -1,6 +1,7 @@
 {:polylith {:top-namespace "me.cyppan"}
  :aliases  {:dev  {:extra-paths ["development/src"
-                                 "components/schema/src"]
+                                 "components/schema/src"
+                                 "bases/api/src"]
                    :extra-deps  {org.clojure/clojure {:mvn/version "1.10.3"}
                                  prismatic/schema    {:mvn/version "1.1.12"}}}
             :poly {:main-opts  ["-m" "polylith.clj.core.poly-cli.core"]
