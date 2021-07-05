@@ -1,0 +1,11 @@
+{:polylith {:top-namespace "me.cyppan"}
+ :aliases  {:dev  {:extra-paths ["development/src"
+                                 "components/schema/src"]
+                   :extra-deps  {org.clojure/clojure {:mvn/version "1.10.3"}
+                                 prismatic/schema    {:mvn/version "1.1.12"}}}
+            :poly {:main-opts  ["-m" "polylith.clj.core.poly-cli.core"]
+                   :extra-deps {polyfy/polylith
+                                {:git/url   "https://github.com/polyfy/polylith"
+                                 :sha       "bb594393e03bd97a03109775cb16815594a13748"
+                                 :deps/root "projects/poly"}}}
+            :test {:extra-paths []}}}
